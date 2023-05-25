@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald:wgh@600;700&display=swap');
 
 *, *::after, *::before{
     box-sizing: border-box;
@@ -20,3 +20,177 @@ img, iframe, video{
     max-width: 100%;
 }
 
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+}
+
+header{
+    background-color: #fff;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    padding-bottom: 0.7rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Oswald', sans-serif;
+    padding: .5rem .6rem; 
+    transition: all .8s; 
+
+}
+
+nav a:hover {
+    color: rgb(255, 238, 60);
+    background-color: black;
+}
+
+main, section {
+    height: 73vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.conteudo {
+    width: 90%;
+    margin: auto;
+    max-width: 800px; 
+}
+
+.conteudo h1 {
+    text-transform: uppercase; 
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem; 
+    margin-bottom: 1rem;
+
+}
+
+.conteudo p {
+    line-height: 2rem;
+}
+
+.cta {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 600;   
+    background-color: rgb(255, 238, 60);
+    padding: 1.15rem 1.8rem;
+    line-height: 5.5rem;
+    color: black;
+    letter-spacing: 3px; 
+    text-transform: uppercase;
+}
+
+.cta::before {
+    content: "+"; 
+    margin-right: 0.8rem;
+
+}
+
+.verde-agua {
+    background-color: #26ccca;
+    color: #fff;
+}
+
+#ux {
+    color: #fff;
+    background-image: url(imagens/h13-background-img-2-min.jpg);
+}
+
+#motion {
+    background-image: url(imagens/h13-background-img-3-min.jpg);
+    background-size: cover; 
+    background-position-x: center; 
+}
+
+#brand {
+    background-image: url(imagens/h13-background-img-4-min.jpg);
+    color: #fff;
+}
+
+.texto {
+    color: #999;
+}
+
+#print {   
+    color: #fff;
+    background-image: url(imagens/h13-background-img-5-min.jpg);
+    background-size: cover; 
+    background-position-x: center; 
+
+}
+
+#produtos {
+    background-image: url(imagens/h13-background-img-1-min.jpg);
+    background-size: cover; 
+    background-position-x: center; 
+} 
+
+#produto, #motion, #print {
+    background-attachment: fixed;
+}
+
+.conteudo {
+    width: 50%;
+    max-width: 800ox;
+    margin: 0;
+    margin-left: 4rem;
+}
+
+.fixed {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    font-weight: bolder;
+
+    bottom: 90px;
+    right: 30px;
+}
+
+.fixed:hover {
+    background-color: green;
+    font-weight: bolder;
+    border-radius: 35px;
+}
+
+@media screen and (min-width:768px) {
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 10vh;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    header nav {
+        width: 70%;
+        max-width: 800px;
+    }
+
+    nav a {
+        font-size: 1.1rem; 
+        padding: 0.7rem 1.0rem;
+    }
+
+    .conteudo h1 {
+        font-size: 5rem;
+        margin: -0.6rem;
+    }
+
+}
